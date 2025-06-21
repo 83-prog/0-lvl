@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> body color change </title>
+	
+	<style>
+	
+	.bg_value{
+max-height: 100%;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
+    width: min(100px);
+    min-height: min(500px);
+    overflow: hidden;
+	}
+	
+	.bg-value_content{
+	flex: 0 0 auto;
+    width: 100%;
+	}
+	
+	.bg_value input{
+	height: 80px;
+    border: none;
+    padding: 6px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+	}
+	
+	.bg_value button{
+	padding: 6px 12px;
+    width: 100%;
+	}
+	
+	
+	
+	
+	</style>
+	</head>
+	<body>
+	
+	<div class="bg_value">
+	<div class="bg-value_content">
+	<input type="color" id="input"/>
+	<button onclick="bg()"> change </button>
+	</div>
+	</div>
+	
+	
+	<script>
+	function bg(){
+	let input = document.getElementById("input");
+	let inputValue = input.value;
+	document.body.style.backgroundColor=inputValue;
+	
+	
+	}
+	
+	
+	
+	</script>
+	</body>
+</html>
+	
